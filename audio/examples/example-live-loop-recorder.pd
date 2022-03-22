@@ -1,0 +1,126 @@
+#N canvas 797 137 897 716 10;
+#X declare -path ../;
+#X declare -path ../sounds;
+#X floatatom 118 100 5 0 0 0 BPM - -;
+#X obj 123 50 loadbang;
+#X floatatom 33 245 5 0 0 0 - - -;
+#X obj 49 146 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 70 146 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 122 75 130;
+#X obj 90 146 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 85 195 5 0 0 0 - - -;
+#X floatatom 34 40 5 0 0 0 - - -;
+#X obj 33 122 m-metro;
+#X msg 290 100 loop 1;
+#X obj 269 100 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 269 125 else/player~;
+#X floatatom 34 361 5 0 0 0 - - -;
+#X obj 75 361 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 69 307 sel 0;
+#X obj 69 332 del 11;
+#X obj 34 390 playdir~;
+#X obj 34 678 dac~;
+#X floatatom 127 212 5 0 0 0 - - -;
+#X obj 128 120 swap 60000;
+#X obj 128 145 /;
+#X floatatom 128 170 5 0 0 0 - - -;
+#X obj 127 189 * 16;
+#X obj 84 220 sel 1;
+#X obj 87 243 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 215 489 tapeloop~, f 36;
+#X obj 313 369 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 370 429 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 396 463 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 317 513 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 428 507 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 120 373 read loops.txt;
+#X obj 121 349 loadbang;
+#X text 423 460 stop;
+#X text 398 429 start;
+#X text 335 366 record;
+#X text 333 509 recording;
+#X text 448 503 playing;
+#X obj 448 642 tapeloop~, f 36;
+#X obj 546 522 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 603 582 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 629 616 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 550 666 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 661 660 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 656 613 stop;
+#X text 631 582 start;
+#X text 568 519 record;
+#X text 566 662 recording;
+#X text 681 656 playing;
+#X obj 35 570 *~ 0.9;
+#X obj 31 20 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144 -1
+-1 1;
+#X text 158 20 0 stops the audio;
+#X text 265 187 add the m-toolbox/audio to preferences / Path;
+#X obj -611 656 playdir~;
+#X msg -525 639 read loops.txt;
+#X obj -524 615 loadbang;
+#X obj 575 41 declare -path ../;
+#X obj 269 157 declare -path ../sounds;
+#X connect 0 0 9 1;
+#X connect 0 0 20 0;
+#X connect 1 0 5 0;
+#X connect 2 0 13 0;
+#X connect 2 0 15 0;
+#X connect 5 0 0 0;
+#X connect 7 0 24 0;
+#X connect 8 0 9 0;
+#X connect 9 0 2 0;
+#X connect 9 1 3 0;
+#X connect 9 2 4 0;
+#X connect 9 3 6 0;
+#X connect 9 4 7 0;
+#X connect 10 0 12 0;
+#X connect 11 0 12 0;
+#X connect 13 0 17 0;
+#X connect 14 0 17 2;
+#X connect 15 0 16 0;
+#X connect 16 0 14 0;
+#X connect 17 0 26 0;
+#X connect 17 0 50 0;
+#X connect 19 0 26 1;
+#X connect 19 0 39 1;
+#X connect 20 0 21 0;
+#X connect 20 1 21 1;
+#X connect 21 0 22 0;
+#X connect 22 0 23 0;
+#X connect 23 0 19 0;
+#X connect 24 0 25 0;
+#X connect 26 1 30 0;
+#X connect 26 2 31 0;
+#X connect 27 0 26 2;
+#X connect 28 0 26 3;
+#X connect 29 0 26 4;
+#X connect 32 0 17 1;
+#X connect 33 0 32 0;
+#X connect 39 0 50 0;
+#X connect 39 1 43 0;
+#X connect 39 2 44 0;
+#X connect 40 0 39 2;
+#X connect 41 0 39 3;
+#X connect 42 0 39 4;
+#X connect 50 0 18 0;
+#X connect 50 0 18 1;
+#X connect 51 0 8 0;
+#X connect 55 0 54 1;
+#X connect 56 0 55 0;

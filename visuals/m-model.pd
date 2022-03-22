@@ -1,0 +1,42 @@
+#N canvas 0 96 818 777 10;
+#X obj 100 70 inlet;
+#X obj 103 650 model;
+#X obj 360 300 sel 0 1 2 3 4 5 6;
+#X obj 270 70 inlet;
+#X obj 80 340 colorRGB 1 1 1;
+#X floatatom 100 270 5 0 0 0 - - -;
+#X floatatom 170 270 5 0 0 0 - - -;
+#X floatatom 230 270 5 0 0 0 - - -;
+#X floatatom 300 270 5 0 0 0 - - -;
+#X msg 381 409 open /home/m-onz/m-onzAV/visuals/models/computer.obj
+;
+#X msg 362 444 open /home/m-onz/m-onzAV/visuals/models/keyboard.obj
+;
+#X msg 344 475 open /home/m-onz/m-onzAV/visuals/models/cursor.obj;
+#X msg 323 503 open /home/m-onz/m-onzAV/visuals/models/chip.obj;
+#X msg 280 535 open /home/m-onz/m-onzAV/visuals/models/flashdrive.obj
+;
+#X msg 280 565 open /home/m-onz/m-onzAV/visuals/models/mouse.obj;
+#X msg 280 595 open /home/m-onz/m-onzAV/visuals/models/joystick.obj
+;
+#X connect 0 0 4 0;
+#X connect 2 0 9 0;
+#X connect 2 1 10 0;
+#X connect 2 2 11 0;
+#X connect 2 3 12 0;
+#X connect 2 4 13 0;
+#X connect 2 5 14 0;
+#X connect 2 6 15 0;
+#X connect 3 0 2 0;
+#X connect 4 0 1 0;
+#X connect 5 0 4 1;
+#X connect 6 0 4 2;
+#X connect 7 0 4 3;
+#X connect 8 0 4 4;
+#X connect 9 0 1 0;
+#X connect 10 0 1 0;
+#X connect 11 0 1 0;
+#X connect 12 0 1 0;
+#X connect 13 0 1 0;
+#X connect 14 0 1 0;
+#X connect 15 0 1 0;

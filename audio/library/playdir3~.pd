@@ -1,0 +1,60 @@
+#N canvas 40 158 813 590 10;
+#X obj 48 511 outlet~;
+#X obj 49 483 *~ 0.9;
+#X msg 100 379 loop 0;
+#X obj 100 353 loadbang;
+#X floatatom 13 39 5 0 0 0 - - -;
+#X obj 54 243 % 4, f 6;
+#X obj 14 18 inlet;
+#X obj 94 16 inlet;
+#X obj 54 266 + 1;
+#X obj 54 218 abs;
+#X obj 68 355 b;
+#X obj 184 158 else/dir;
+#X obj 198 130 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 190 79 open /home/m-onz/m-onzAV/audio/sounds/\$1;
+#X obj 55 295 pack f s;
+#X msg 186 40 symbol perc;
+#X msg 53 325 open \$2/\$1.wav;
+#X obj 48 444 else/gran.player~ stereo.wav -speed 50 -transp -400,
+f 28;
+#X obj 158 420 nbx 6 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 0 256;
+#X obj 241 420 nbx 6 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 0 256;
+#X text 160 402 speed (%);
+#X text 240 401 transposition;
+#X text 310 419 cents;
+#X obj 103 421 nbx 4 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 0 256;
+#X text 90 402 size (ms);
+#X obj 494 57 inlet;
+#X obj 539 55 inlet;
+#X obj 588 59 inlet;
+#X connect 1 0 0 0;
+#X connect 2 0 17 0;
+#X connect 3 0 2 0;
+#X connect 4 0 9 0;
+#X connect 5 0 8 0;
+#X connect 6 0 4 0;
+#X connect 7 0 13 0;
+#X connect 8 0 14 0;
+#X connect 9 0 5 0;
+#X connect 10 0 17 0;
+#X connect 11 1 14 1;
+#X connect 11 2 5 1;
+#X connect 12 0 11 0;
+#X connect 13 0 11 0;
+#X connect 13 0 12 0;
+#X connect 14 0 16 0;
+#X connect 15 0 13 0;
+#X connect 16 0 10 0;
+#X connect 16 0 17 0;
+#X connect 17 0 1 0;
+#X connect 18 0 17 2;
+#X connect 19 0 17 3;
+#X connect 23 0 17 1;
+#X connect 25 0 17 1;
+#X connect 26 0 17 2;
+#X connect 27 0 17 3;

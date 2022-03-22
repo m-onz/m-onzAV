@@ -1,0 +1,78 @@
+#N canvas 954 143 752 582 10;
+#X declare -path else;
+#X obj 177 313 tgl 20 0 empty empty empty 17 7 0 10 -228856 -1 -1 0
+1;
+#X obj 328 193 tgl 20 0 empty empty empty 17 7 0 10 -228856 -1 -1 1
+1;
+#X msg 185 264 show;
+#X msg 231 262 ms \$1;
+#X obj 381 362 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 381 382 0;
+#X msg 136 152 1;
+#X msg 415 376 1;
+#X msg 253 96 0;
+#X obj 252 72 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 445 69 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 418 94 2;
+#X msg 452 94 0;
+#X obj 315 83 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 314 102 1;
+#X obj 51 40 inlet~;
+#X obj 252 36 inlet;
+#X obj 313 51 inlet;
+#X obj 442 35 inlet;
+#X obj 215 521 outlet~;
+#X obj 290 243 else/tabplayer~ \$0-buf -loop;
+#X obj 235 288 else/sample~ \$0-buf -ch 1;
+#X obj 202 342 else/tabwriter~ \$0-buf 1;
+#X obj 314 520 outlet;
+#X obj 361 521 outlet;
+#X obj 10 7 declare -path else;
+#X obj 126 48 r m-metro-measure;
+#X obj 141 110 r m-metro-bar;
+#X floatatom 135 69 40 0 0 0 - - -;
+#X obj 306 219 changed;
+#X obj 364 208 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 146 177 else/router 3 1, f 18;
+#X obj 507 42 inlet;
+#X msg 517 83 clear;
+#X connect 0 0 22 0;
+#X connect 0 0 23 0;
+#X connect 1 0 24 0;
+#X connect 1 0 29 0;
+#X connect 2 0 21 0;
+#X connect 3 0 21 0;
+#X connect 4 0 5 0;
+#X connect 4 0 7 0;
+#X connect 5 0 0 0;
+#X connect 6 0 31 0;
+#X connect 7 0 31 1;
+#X connect 8 0 1 0;
+#X connect 8 0 31 1;
+#X connect 9 0 8 0;
+#X connect 10 0 11 0;
+#X connect 10 0 12 0;
+#X connect 11 0 31 1;
+#X connect 12 0 1 0;
+#X connect 13 0 14 0;
+#X connect 14 0 31 1;
+#X connect 15 0 22 1;
+#X connect 16 0 9 0;
+#X connect 17 0 13 0;
+#X connect 18 0 10 0;
+#X connect 20 0 19 0;
+#X connect 22 1 4 0;
+#X connect 26 0 28 0;
+#X connect 27 0 6 0;
+#X connect 28 0 3 0;
+#X connect 29 0 20 0;
+#X connect 29 0 30 0;
+#X connect 31 0 0 0;
+#X connect 31 1 1 0;
+#X connect 32 0 33 0;
+#X connect 33 0 21 0;

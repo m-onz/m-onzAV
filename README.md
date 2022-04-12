@@ -9,6 +9,4 @@ audio visual performance patches... Pd and GEM. As seen in the video's below. Mi
         <img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/3636e93b-a0e1-4744-afda-f9bbe0cc0882.gif?ClientID=vimeo-core-prod&Date=1649785361&Signature=a74de6c23ac21da8a358f66ab86228288ae6d215" style="width:640px;" />
         <br><br>
         <h3>...</h3>
-        <iframe src="https://player.vimeo.com/video/698374039?h=f066947108" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/698374039">live 11.04.22</a> from <a href="https://vimeo.com/vjmonz">m-onz</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-<br><br>
+<p><a href="https://vimeo.com/698374039">m-onz - live 11.04.22 (vimeo)</a>

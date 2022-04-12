@@ -1,10 +1,10 @@
 # m-onzAV
 
-audio visual performance patches... Pd and GEM. As seen in the video's below. Minus the audio samples and video's that where made in processing. You will need to add your own video's and sounds and modify the file paths used in the patches.
+audio visual performance patches... [http://puredata.info](Pd and GEM). As seen in the video's below. Minus the audio samples and video's that where made using [Processing](https://processing.org). You will need to add your own video's and sounds and modify the file paths used in the patches.
 
 ## dependencies
 
-Use vanilla pd from Miller Puckette... I alse use the dark theme but this is optional: https://github.com/m-onz/pd-dark-canvas
+Use vanilla pd from Miller Puckette... I alse use the dark theme but this is optional: [dark canvas](https://github.com/m-onz/pd-dark-canvas)
 
 You will need to install these extra libraries from the menu -> find externals.
 

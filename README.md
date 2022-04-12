@@ -1,6 +1,6 @@
 # m-onzAV
 
-audio visual performance patches... [http://puredata.info](Pd and GEM). As seen in the video's below. Minus the audio samples and video's that where made using [Processing](https://processing.org). You will need to add your own video's and sounds and modify the file paths used in the patches.
+audio visual performance patches... [Pd & GEM](http://puredata.info). As seen in the video's below. Minus the audio samples and video's that where made using [Processing](https://processing.org). You will need to add your own video's and sounds and modify the file paths used in the patches.
 
 ## dependencies
 

@@ -1,6 +1,6 @@
 # m-onzAV
 
-audio visual performance patches... Pd and GEM. As seen in the video's below. Minus the audio samples and video's that where made in processing. You will need to add your own video's and sounds and mofify the file paths used in the patches.
+audio visual performance patches... Pd and GEM. As seen in the video's below. Minus the audio samples and video's that where made in processing. You will need to add your own video's and sounds and modify the file paths used in the patches.
 
 <h3>...</h3>
         <img src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/d06f4d1b-8d84-4579-9122-a011c5def967.gif?ClientID=vimeo-core-prod&Date=1649785709&Signature=8ab3fab117f1cc5b43cc0b3fc26af4d1a5f06178" style="width:640px;" />

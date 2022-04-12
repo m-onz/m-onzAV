@@ -1,0 +1,31 @@
+#N canvas 186 211 1175 604 12;
+#X obj 214 396 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 0 256;
+#X obj 293 399 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 0 256;
+#X obj 135 434 else/ping.pong~ 200 0.7;
+#X text 217 371 time;
+#X text 291 375 feedback;
+#X obj 156 224 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 440 256;
+#X obj 274 213 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 0 256;
+#X text 335 213 decay time (ms);
+#X obj 333 235 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 0 256;
+#X obj 215 188 else/dust~ 4;
+#X obj 156 255 else/pluck~ 50 2500 10000, f 30;
+#X text 128 225 Hz*;
+#X text 156 187 trigger;
+#X obj 134 460 *~ 0.5;
+#X obj 138 502 dac~;
+#X connect 0 0 2 1;
+#X connect 1 0 2 2;
+#X connect 2 0 13 0;
+#X connect 5 0 10 0;
+#X connect 6 0 10 2;
+#X connect 8 0 10 3;
+#X connect 9 0 10 1;
+#X connect 10 0 2 0;
+#X connect 13 0 14 0;
+#X connect 13 0 14 1;

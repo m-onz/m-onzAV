@@ -1,4 +1,4 @@
-#N canvas 1244 104 644 612 10;
+#N canvas 795 104 644 612 10;
 #X declare -lib Gem;
 #X obj 12 263 gemhead 20;
 #X obj 12 287 gemframebuffer;
@@ -44,7 +44,7 @@
 #X obj 564 380 i 0;
 #X obj 603 380 + 1;
 #X obj 565 351 b;
-#X obj 359 526 rectangle 7.12 4.07;
+#X obj 358 547 rectangle 7.12 4.07;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 2 0 7 0;
@@ -68,10 +68,8 @@
 #X connect 20 0 19 0;
 #X connect 21 0 22 0;
 #X connect 22 0 23 0;
-#X connect 23 0 44 1;
 #X connect 24 0 25 0;
 #X connect 25 0 26 0;
-#X connect 26 0 44 2;
 #X connect 27 0 1 0;
 #X connect 28 0 9 0;
 #X connect 29 0 30 0;

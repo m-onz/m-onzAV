@@ -12,7 +12,7 @@
 #X obj 197 46 catch~ \$0-R;
 #X obj 439 109 loadbang;
 #X msg 439 130 0;
-#X obj 327 30 vsl 17 127 1 127 0 1 empty empty VELOCITY 0 -9 0 10 -262144
+#X obj 326 28 vsl 17 127 1 127 0 1 empty empty VELOCITY 0 -9 0 10 -262144
 -1 -1 12600 1;
 #X obj 327 165 nbx 3 17 1 127 0 0 empty empty empty 0 -8 0 10 -262144
 -1 -1 127 256;
@@ -25,8 +25,8 @@
 #X obj 8 134 poly 16 1;
 #X obj 97 67 /~ 12;
 #X obj 197 67 /~ 12;
-#X obj 13 14 inlet;
-#X obj 71 15 inlet;
+#X obj 8 14 inlet;
+#X obj 68 15 inlet;
 #N canvas 398 96 463 931 piano_resonator 0;
 #X obj 35 15 r \$0-poly;
 #X obj 35 36 route 1;
@@ -319,7 +319,7 @@
 #X restore 120 14 pd piano_resonator;
 #X obj 97 152 outlet~;
 #X obj 197 152 outlet~;
-#X obj 24 76 moses 111;
+#X obj 274 16 inlet;
 #X connect 0 0 1 0;
 #X connect 1 0 26 0;
 #X connect 2 0 3 0;
@@ -342,5 +342,5 @@
 #X connect 21 0 18 0;
 #X connect 22 0 19 0;
 #X connect 23 0 20 0;
-#X connect 24 0 28 0;
-#X connect 28 0 20 1;
+#X connect 24 0 20 1;
+#X connect 28 0 2 0;

@@ -1,0 +1,23 @@
+#N canvas 113 493 450 300 12;
+#X obj 32 147 swap 60000;
+#X floatatom 32 117 5 0 0 0 - - -;
+#X obj 32 173 /, f 10;
+#X floatatom 32 256 5 0 0 0 - - -;
+#X obj 32 212 / 2;
+#X obj 201 109 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 140 256;
+#X obj 201 258 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 428.571 256;
+#X obj 201 136 else/bpm;
+#X obj 32 10 loadbang;
+#X msg 32 34 140;
+#X connect 0 0 2 0;
+#X connect 0 1 2 1;
+#X connect 1 0 0 0;
+#X connect 2 0 4 0;
+#X connect 4 0 3 0;
+#X connect 5 0 7 0;
+#X connect 7 0 6 0;
+#X connect 8 0 9 0;
+#X connect 9 0 1 0;
+#X connect 9 0 5 0;

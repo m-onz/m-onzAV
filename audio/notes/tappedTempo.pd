@@ -1,0 +1,12 @@
+#N canvas 1 62 450 300 12;
+#X obj 205 137 bng 17 250 50 0 empty empty empty 17 7 0 10 -228856
+-1 -1;
+#X obj 205 230 else/display;
+#X obj 205 199 else/tap -ms;
+#X obj 97 231 else/display;
+#X obj 97 200 else/tap;
+#X text 65 62 tapped tempo is ms and bpm;
+#X connect 0 0 2 0;
+#X connect 0 0 4 0;
+#X connect 2 0 1 0;
+#X connect 4 0 3 0;

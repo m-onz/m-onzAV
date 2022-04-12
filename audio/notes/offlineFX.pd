@@ -1,4 +1,4 @@
-#N canvas 629 129 698 456 12;
+#N canvas 111 360 700 456 12;
 #X obj 11 9 loadbang;
 #X obj 11 37 t b b, f 10;
 #X msg 78 63 \; pd dsp 1;
@@ -13,15 +13,15 @@
 #X obj 224 263 osc~ 440;
 #X obj 11 199 delay;
 #X obj 320 244 hsl 128 15 10 44100 1 0 empty empty empty -2 -8 0 10
--228856 -1 -1 10214 1;
+-228856 -1 -1 10401 1;
 #X obj 317 268 nbx 8 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 8533 256;
+-228856 -1 -1 9651 256;
 #X obj 224 292 else/downsample~;
-#X obj 314 111 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 317 92 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 314 134 metro 1000;
-#X obj 314 162 random 11800;
-#X obj 314 187 + 4;
+#X obj 317 115 metro 1000;
+#X obj 317 143 random 11800;
+#X obj 317 168 + 4;
 #X text 99 33 pd -batch ./offline.pd;
 #X msg 11 119 330000;
 #X connect 0 0 1 0;

@@ -1,5 +1,5 @@
-#N canvas 0 96 748 522 10;
-#N canvas 1171 96 388 457 tempo 1;
+#N canvas 210 272 451 522 10;
+#N canvas 606 361 388 457 tempo 1;
 #X obj 216 105 swap 60000;
 #X obj 216 130 /;
 #X floatatom 216 155 5 0 0 0 - - -;
@@ -13,7 +13,7 @@
 #X obj 216 73 inlet;
 #X obj 59 35 inlet;
 #X obj 96 381 outlet;
-#X obj 96 288 + 1;
+#X obj 87 323 + 1;
 #X obj 59 60 sel 0;
 #X msg 141 96 1, f 1;
 #X msg 121 96 0, f 1;
